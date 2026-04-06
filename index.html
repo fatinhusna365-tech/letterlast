@@ -1,22 +1,85 @@
 <!DOCTYPE html>
-<html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>A Letter for You</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="intro" id="introText">
-      i hope you read this, even if it's too late.
-    </div>
-    <button class="btn" onclick="showLetter()">Read it</button>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>For You</title>
 
-    <div class="letter" id="letterBox">
-      <p id="typedText"></p>
-      <img src="ttd.png" alt="Signature" class="signature" />
-    </div>
+    <!-- Font aesthetic -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
 
-    <script src="script.js"></script>
-  </body>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to bottom, #1a1a1a, #000000);
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            margin-top: 100px;
+            padding: 20px;
+        }
+
+        h1 {
+            font-weight: 500;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-weight: 300;
+            line-height: 1.8;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .fade {
+            opacity: 0;
+            animation: fadeIn 3s forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1 class="fade">for my favourite people</h1>
+
+    <p class="fade" style="animation-delay: 1s;">
+        they weren’t lying when they said this would end on a random afternoon.
+    </p>
+
+    <p class="fade" style="animation-delay: 2s;">
+        strange how people who were once strangers
+        became the reason we laugh a little louder.
+    </p>
+
+    <p class="fade" style="animation-delay: 3s;">
+        somehow, in between all the chaos,
+        you became my home away from home.
+    </p>
+
+    <p class="fade" style="animation-delay: 4s;">
+        and maybe one day,
+        we’ll look back at this
+        and realize how much this meant.
+    </p>
+
+    <p class="fade" style="animation-delay: 5s;">
+        thank you for everything.
+    </p>
+
+    <p class="fade" style="animation-delay: 6s;">
+        — from me
+    </p>
+</div>
+
+</body>
 </html>
